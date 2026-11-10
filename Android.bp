@@ -5,6 +5,8 @@
 soong_namespace {
     imports: [
         "device/infinix/X6882",
+        "hardware/deadlock",
+        "hardware/deadlock/libtranlog",
         "hardware/mediatek",
         "hardware/mediatek/libmtkperf_client",
         "hardware/mediatek/libaedv",
@@ -14829,36 +14831,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcam3_transerverengine",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcam3_transerverengine.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libhidlbase",
-                "libhidltransport",
-                "vendor.transsion.hardware.trancam.trancamserver@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libcamalgo.3dnr",
     owner: "infinix",
     strip: {
@@ -18651,33 +18623,6 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libcutils",
                 "libtrancamJsonConvertor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libtranlog",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libtranlog.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libutils",
-                "liblog",
                 "libc++",
                 "libc",
                 "libm",
@@ -35682,34 +35627,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.transsion.hardware.trancam.trancamserver@1.0",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.transsion.hardware.trancam.trancamserver@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.trustonic.tee.tui@1.0",
     owner: "infinix",
     strip: {
@@ -37379,15 +37296,6 @@ prebuilt_etc_xml {
     soc_specific: true,
 }
 
-prebuilt_etc_xml {
-    name: "vendor.transsion.hardware.trancam.trancamserver@1.0.xml",
-    owner: "infinix",
-    src: "proprietary/vendor/etc/vintf/manifest/vendor.transsion.hardware.trancam.trancamserver@1.0.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "ccci_mdinit",
     owner: "infinix",
@@ -38081,36 +37989,6 @@ cc_prebuilt_binary {
                 "libhardware",
                 "libutils",
                 "vendor.silead.hardware.fingerprintext@1.0",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.transsion.hardware.trancam.trancamserver@1.0-service",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/vendor.transsion.hardware.trancam.trancamserver@1.0-service",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libhidlbase",
-                "libutils",
-                "vendor.transsion.hardware.trancam.trancamserver@1.0",
                 "libc++",
                 "libc",
                 "libm",

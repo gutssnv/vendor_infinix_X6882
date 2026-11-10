@@ -249,7 +249,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6882/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/vendor.silead.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.rc \
-    vendor/infinix/X6882/proprietary/vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
@@ -966,7 +965,6 @@ PRODUCT_PACKAGES += \
     libcam.seninfn3d \
     libcam3_tranelapsedtime \
     libcam3_tranpriorityctrl \
-    libcam3_transerverengine \
     libcamalgo.3dnr \
     libcamalgo.dngop \
     libcamalgo.eis \
@@ -1099,7 +1097,6 @@ PRODUCT_PACKAGES += \
     libtneclient \
     libtrancamJsonConvertor \
     libtrancam_filelockmgr \
-    libtranlog \
     libtranssion_forkexecwrap \
     libtrm \
     libudf \
@@ -1649,7 +1646,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.8 \
     vendor.mediatek.hardware.pq@2.9 \
     vendor.silead.hardware.fingerprintext@1.0 \
-    vendor.transsion.hardware.trancam.trancamserver@1.0 \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
@@ -1719,7 +1715,6 @@ PRODUCT_PACKAGES += \
     manifest_goodix.xml \
     manifest_hwcomposer.xml \
     vendor.silead.hardware.fingerprintext@1.0-service.xml \
-    vendor.transsion.hardware.trancam.trancamserver@1.0.xml \
     ccci_mdinit \
     ccci_rpcd \
     fuelgauged \
@@ -1741,7 +1736,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.silead.hardware.fingerprintext@1.0-service \
-    vendor.transsion.hardware.trancam.trancamserver@1.0-service \
     vendor.trustonic.tee@1.1-service \
     vtservice_hidl \
     kmsetkey_ca.trustonic \
