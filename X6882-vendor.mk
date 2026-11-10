@@ -6,7 +6,11 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/infinix/X6882
 
 PRODUCT_COPY_FILES += \
+    vendor/infinix/X6882/proprietary/system/etc/default-permissions/default-com.transsion.dtsaudio.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/default-com.transsion.dtsaudio.xml \
+    vendor/infinix/X6882/proprietary/system/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/kpoc_charger.rc \
+    vendor/infinix/X6882/proprietary/system/etc/permissions/dtsaudio.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/dtsaudio.xml \
     vendor/infinix/X6882/proprietary/system/etc/public.libraries-mtk.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-mtk.txt \
+    vendor/infinix/X6882/proprietary/system/etc/sysconfig/config-com.transsion.dtsaudio.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/config-com.transsion.dtsaudio.xml \
     vendor/infinix/X6882/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
     vendor/infinix/X6882/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.tlbin \
     vendor/infinix/X6882/proprietary/vendor/app/mcRegistry/031c0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/031c0000000000000000000000000000.drbin \
@@ -171,6 +175,29 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6882/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/infinix/X6882/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
     vendor/infinix/X6882/proprietary/vendor/etc/cam3atms_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cam3atms_profiles.xml \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_44.bin \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_48.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dts/acc/d30de3a0-b177-4822-9c15-816b79545f82_usb_48.bin \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/beq44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/beq44 \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/beq48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/beq48 \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/ctc:$(TARGET_COPY_OUT_VENDOR)/etc/dts/ctc \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/current_bluetooth44k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_bluetooth44k \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/current_bluetooth48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_bluetooth48k \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/current_lineout48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_lineout48k \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/current_speaker48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_speaker48k \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/current_usb44k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_usb44k \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/current_usb48k:$(TARGET_COPY_OUT_VENDOR)/etc/dts/current_usb48k \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/customer.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/dts/customer.cfg \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/dts_audio_settings:$(TARGET_COPY_OUT_VENDOR)/etc/dts/dts_audio_settings \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/games_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/games_accessory44 \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/games_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/games_accessory48 \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/games_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/games_speaker48 \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/movie_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/movie_accessory44 \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/movie_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/movie_accessory48 \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/movie_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/movie_speaker48 \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/music_accessory44:$(TARGET_COPY_OUT_VENDOR)/etc/dts/music_accessory44 \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/music_accessory48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/music_accessory48 \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/music_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/music_speaker48 \
+    vendor/infinix/X6882/proprietary/vendor/etc/dts/off_speaker48:$(TARGET_COPY_OUT_VENDOR)/etc/dts/off_speaker48 \
     vendor/infinix/X6882/proprietary/vendor/etc/ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list.xml \
     vendor/infinix/X6882/proprietary/vendor/etc/ecc_list_OP01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP01.xml \
     vendor/infinix/X6882/proprietary/vendor/etc/ecc_list_OP02.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_OP02.xml \
@@ -205,9 +232,9 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6882/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
-    vendor/infinix/X6882/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service.trustonic.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
+    vendor/infinix/X6882/proprietary/vendor/etc/init/dts.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dts.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
@@ -249,10 +276,8 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6882/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/vendor.silead.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.rc \
-    vendor/infinix/X6882/proprietary/vendor/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.transsion.hardware.trancam.trancamserver@1.0-service.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/volte_clientapi_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_clientapi_ua.rc \
-    vendor/infinix/X6882/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/infinix/X6882/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/infinix/X6882/proprietary/vendor/etc/libnfc-slm_567.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-slm_567.conf \
@@ -396,19 +421,19 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6882/proprietary/vendor/raw_hdr/params_bin/s5kjn1_17201906_EXPO_BRACKET_HDR_nr.bin:$(TARGET_COPY_OUT_VENDOR)/raw_hdr/params_bin/s5kjn1_17201906_EXPO_BRACKET_HDR_nr.bin
 
 PRODUCT_PACKAGES += \
+    libshowlogo \
     AVCSecureVdecCA_510 \
     HEVCSecureVdecCA_510 \
     VP9SecureVdecCA_510 \
     vendor.mediatek.hardware.videotelephony@1.0-impl \
     libAVCSecureVencCA_510 \
     libbwc \
+    libdts-eagle-shared \
+    libdtsdsec \
     libgz_gp_client \
     libgz_uree \
     libhevce_sb.ca7.android \
-    libion_mtk \
-    libion_ulit \
     libipsec_ims_shr \
-    libladder \
     libthha \
     libvcodec_oal \
     libvcodecdrv_header_stub \
@@ -416,6 +441,7 @@ PRODUCT_PACKAGES += \
     libwo \
     arm.graphics-V1-ndk_platform \
     libmtk_drvb \
+    libdtsaudio \
     vendor.mediatek.hardware.videotelephony@1.0_vendor \
     libHEVCdec_sa.ca7.android \
     libh264dec_customize \
@@ -921,7 +947,6 @@ PRODUCT_PACKAGES += \
     lib_iir \
     lib_speech_enh \
     libaal_cust \
-    libaal_key \
     libaal_mtk \
     libaibld \
     libaipe_bokeh \
@@ -966,7 +991,6 @@ PRODUCT_PACKAGES += \
     libcam.seninfn3d \
     libcam3_tranelapsedtime \
     libcam3_tranpriorityctrl \
-    libcam3_transerverengine \
     libcamalgo.3dnr \
     libcamalgo.dngop \
     libcamalgo.eis \
@@ -1000,7 +1024,7 @@ PRODUCT_PACKAGES += \
     libfgauge_gm30 \
     libfile_op \
     libforkexecwrap \
-    libformatter \
+    libformatter_mtk \
     libged \
     libgf_ca \
     libgf_factory_test \
@@ -1032,6 +1056,7 @@ PRODUCT_PACKAGES += \
     libmmagent \
     libmml \
     libmnetlink_v104 \
+    libmnl_mtk \
     libmsbc_mtk \
     libmtk-fusion-ril-prop-vsim \
     libmtk-ril \
@@ -1099,7 +1124,6 @@ PRODUCT_PACKAGES += \
     libtneclient \
     libtrancamJsonConvertor \
     libtrancam_filelockmgr \
-    libtranlog \
     libtranssion_forkexecwrap \
     libtrm \
     libudf \
@@ -1478,7 +1502,6 @@ PRODUCT_PACKAGES += \
     libitdfacebeauty \
     liblpcnr \
     libmagicsky_64 \
-    libmnl \
     libmorpho_HDSR \
     libmpbase \
     libmsnr \
@@ -1611,7 +1634,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.composer_ext@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.1 \
-    vendor.mediatek.hardware.lbs@1.0 \
     vendor.mediatek.hardware.mdmonitor@1.0 \
     vendor.mediatek.hardware.mmagent@1.0 \
     vendor.mediatek.hardware.mmagent@1.1 \
@@ -1622,9 +1644,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mms@1.4 \
     vendor.mediatek.hardware.mms@1.5 \
     vendor.mediatek.hardware.mms@1.6 \
-    vendor.mediatek.hardware.mtkradioex@2.0 \
-    vendor.mediatek.hardware.mtkradioex@3.0 \
-    vendor.mediatek.hardware.netdagent@1.0 \
     vendor.mediatek.hardware.neuropilot.agent@1.0 \
     vendor.mediatek.hardware.neuropilot.agent@1.1 \
     vendor.mediatek.hardware.neuropilot.agent@1.2 \
@@ -1649,7 +1668,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.8 \
     vendor.mediatek.hardware.pq@2.9 \
     vendor.silead.hardware.fingerprintext@1.0 \
-    vendor.transsion.hardware.trancam.trancamserver@1.0 \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
@@ -1704,6 +1722,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.utils@2.0 \
     vendor.mediatek.hardware.apuware.xrp@1.0 \
     vendor.mediatek.hardware.apuware.xrp@2.0 \
+    DtsAudio \
+    dtsaudio \
     android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.neuralnetworks-shim-service-mtk.xml \
     android.hardware.security.keymint-service.trustonic.xml \
@@ -1719,7 +1739,7 @@ PRODUCT_PACKAGES += \
     manifest_goodix.xml \
     manifest_hwcomposer.xml \
     vendor.silead.hardware.fingerprintext@1.0-service.xml \
-    vendor.transsion.hardware.trancam.trancamserver@1.0.xml \
+    kpoc_charger \
     ccci_mdinit \
     ccci_rpcd \
     fuelgauged \
@@ -1729,7 +1749,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
     android.hardware.neuralnetworks-shim-service-mtk \
-    android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.security.keymint-service.trustonic \
     android.hardware.graphics.allocator@4.0-service-mediatek.mt6789 \
     camerahalserver \
@@ -1741,7 +1760,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.silead.hardware.fingerprintext@1.0-service \
-    vendor.transsion.hardware.trancam.trancamserver@1.0-service \
     vendor.trustonic.tee@1.1-service \
     vtservice_hidl \
     kmsetkey_ca.trustonic \
@@ -1760,7 +1778,6 @@ PRODUCT_PACKAGES += \
     volte_rcs_ua \
     volte_stack \
     volte_ua \
-    wlan_assistant \
     wmt_launcher \
     wmt_loader
 
@@ -2151,7 +2168,6 @@ PRODUCT_PACKAGES += \
     vendor_lib64_libitdfacebeauty_so \
     vendor_lib64_liblpcnr_so \
     vendor_lib64_libmagicsky_64_so \
-    vendor_lib64_libmnl_so \
     vendor_lib64_libmorpho_HDSR_so \
     vendor_lib64_libmpbase_so \
     vendor_lib64_libmsnr_so \
